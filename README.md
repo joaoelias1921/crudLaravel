@@ -1,4 +1,4 @@
-#  **PROJETO hello-world-laravel**
+#  **PROJETO crudLaravel**
 Criando o primeiro repositório de exemplo no GitHub - aula Desenvolvimento Software II UnC
 
 ## **Desenvolvido por:** João Elias
