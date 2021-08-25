@@ -4,15 +4,15 @@
 
 @push('css')
 <style>
-table{
-font-family: Verdana,sans-serif;
-border: 1px solid #ccc;
-margin: 20px 0;
-}
-table th{
-    padding:10px;
-    font-weight: normal;
-}
+    table{
+        font-family: Verdana,sans-serif;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+    }
+    table th{
+        padding:10px;
+        font-weight: normal;
+    }
 </style>
 @endpush
 
