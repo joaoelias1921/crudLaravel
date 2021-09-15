@@ -10,4 +10,9 @@ class Paciente extends Model     //classe paciente que herda da classe model (n�
 
     protected $fillable = ['nome', 'genero']; //protected = só terão acesso as classes que tiverem herança desta classe
 
+    //Criar uma função para estabelecer a associação (relacionamento) entre a classe Paciente e Consulta
+    public function consulta(){
+        //Especificar o tipo de associação
+        return $this->hasMany(Consulta::class); //hasMany == um paciente pode ter uma ou várias consultas
+    }
 }
