@@ -31,28 +31,28 @@
                     {!! Form::open(['action' => ['ConsultaController@update',$consulta->id], 'method' => 'PUT'])!!}
 
                     <div class="form-group">
-                        {!! Form::label(__('Paciente:')) !!}
+                        {!! Form::label(__('Nome do Paciente:')) !!}
                         {!! Form::text("paciente_id", $consulta->paciente_id ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
-                        {!! Form::label(__('Médico Responsável:')) !!}
-                        {!! Form::text("medico_id", $consulta->medico_id ,["id" => "medico_id", "class"=>"form-control mmss","required"=>"required"]) !!}
+                        {!! Form::label(__('Nome do Médico:')) !!}
+                        {!! Form::text("medico_id", $consulta->medico_id ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
-                        {!! Form::label(__('Data da Consulta:')) !!}
-                        {!! Form::date("data", $consulta->data ,["class"=>"form-control","required"=>"required"]) !!}
+                        {!! Form::label(__('Data:')) !!}
+                        {!! Form::text("data", $consulta->data ,["class"=>"form-control mmss","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
-                        {!! Form::label(__('Hora da Consulta:')) !!}
-                        {!! Form::text("time", $consulta->hora ,["class"=>"form-control","required"=>"required"]) !!}
+                        {!! Form::label(__('Hora:')) !!}
+                        {!! Form::text("hora", $consulta->hora ,["class"=>"form-control mmss","required"=>"required"]) !!}
                     </div>
 
                     <div class="well well-sm clearfix">
                         <button class="btn btn-success pull-right" title="@lang('Salvar')"
-                            type="submit">@lang('Atualizar')</button>
+                            type="submit">@lang('Alterar')</button>
                     </div>
 
                     {!! Form::close() !!}
