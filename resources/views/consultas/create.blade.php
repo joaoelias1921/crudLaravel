@@ -28,16 +28,16 @@
                     </div>
                     @endif
 
-                    {!! Form::open(['action' =>'ConsultaController@store', 'method' => 'POST'])!!}  <!-- metodo store no Controller -->
+                    {!! Form::open(['action' =>'ConsultaController@store', 'method' => 'POST'])!!}
 
                     <div class="form-group">
-                        {!! Form::label(__('Paciente:')) !!}   <!-- como label html -->
-                        {!! Form::text("paciente_id", null ,["class"=>"form-control","required"=>"required"]) !!}  <!-- campo input -->
+                        {!! Form::label(__('Paciente:')) !!}
+                        {!! Form::select("paciente_id", $pacientes, null ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
                         {!! Form::label(__('Médico Responsável:')) !!}
-                        {!! Form::text("medico_id", null ,["class"=>"form-control","required"=>"required"]) !!}
+                        {!! Form::select("medico_id", $medicos, null ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">

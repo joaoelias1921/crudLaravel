@@ -17,7 +17,7 @@
                     <div class="d-flex justify-content-between w-100">
                         <span>@lang('Listagem de Consultas')</span>   <!-- criar uma tela -->
                         <a href="{{ url('consultas/create') }}" class="btn-primary btn-sm"> <!-- caminho do arquivo para esta tela, rota em web.php -> ConsultaController.php -> create; Laravel -->
-                            <i class="fa fa-plus"></i> @lang('Novo Médico')  <!-- criar um botão -->
+                            <i class="fa fa-plus"></i> @lang('Nova Consulta')  <!-- criar um botão -->
                         </a>
                     </div>
                 </div>

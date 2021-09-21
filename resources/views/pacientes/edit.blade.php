@@ -37,7 +37,7 @@
 
                     <div class="form-group">
                         {!! Form::label(__('Gênero:')) !!}
-                        {!! Form::text("genero", $paciente->genero ,["id" => "genero", "class"=>"form-control mmss","required"=>"required"]) !!}
+                        {!! Form::text("genero", $paciente->genero ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="well well-sm clearfix">
