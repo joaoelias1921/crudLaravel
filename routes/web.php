@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::resource('pacientes', 'PacienteController');
 Route::resource('medicos', 'MedicoController');
 Route::resource('consultas', 'ConsultaController');
+Route::resource('especialidades', 'EspecialidadeController');
+Route::resource('convenios', 'ConvenioController');
+Route::resource('cargos', 'CargosController');
+Route::resource('tipoExames', 'TipoExameController');
