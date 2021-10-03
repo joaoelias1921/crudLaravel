@@ -70,7 +70,7 @@ class ConvenioController extends Controller
     public function edit($id)
     {
         $convenio = Convenio::findOrFail($id);
-        return view('convenios.edit', compact('convenios'));
+        return view('convenios.edit', compact('convenio'));
     }
 
     /**

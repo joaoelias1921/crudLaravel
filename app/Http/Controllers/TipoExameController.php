@@ -67,7 +67,7 @@ class TipoExameController extends Controller
     public function edit($id)
     {
         $tipoExame = TipoExame::findOrFail($id);
-        return view('tipoExames.edit', compact('tipoExames'));
+        return view('tipoExames.edit', compact('tipoExame'));
     }
 
     /**

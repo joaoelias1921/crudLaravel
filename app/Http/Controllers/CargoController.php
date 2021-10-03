@@ -66,7 +66,7 @@ class CargoController extends Controller
     public function edit($id)
     {
         $cargo = Cargo::findOrFail($id);
-        return view('cargos.edit', compact('cargos'));
+        return view('cargos.edit', compact('cargo'));
     }
 
     /**
