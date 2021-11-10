@@ -12,9 +12,12 @@ class CargosTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('cargos')->insert([
-            'nome_cargo' => 'Secretária(o)',
-            'desc_cargo' => 'Sem descrição cadastrada!'
-        ]);
+        //para usar o factory, não é necessária a instância DB
+        //DB::table('cargos')->insert([
+        //    'nome_cargo' => 'Secretária(o)',
+        //    'desc_cargo' => 'Sem descrição cadastrada!'
+        //]);
+
+        factory(\App\Cargo::class,20)->create();
     }
 }
