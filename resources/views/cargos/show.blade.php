@@ -39,26 +39,27 @@
 
                     <table class="w3-table-all notranslate" width="100%" border="1">
                         <tbody>
-                        <tr>
-                          <th align="left"><strong>ID:</strong></th>
-                          <th align="left">{{$cargo->id}}</th>
-                        </tr>
-                        <tr>
-                            <th align="left"><strong>@lang('Cargo:')</strong>:</th>
-                            <th align="left">{{$cargo->nome_cargo}}</th>
-                        </tr>
-                        <tr>
-                            <th align="left"><strong>@lang('Descrição:')</strong>:</th>
-                            <th align="left">{{$cargo->desc_cargo}}</th>
-                        </tr>
-                        <tr>
-                            <th align="left"><strong>@lang('Adicionado')</strong>:</th>
-                            <th align="left">{{$cargo->created_at}}</th>
-                        </tr>
-                        <tr>
-                            <th align="left"><strong>@lang('Atualizado')</strong>:</th>
-                            <th align="left">{{$cargo->updated_at}}</th>
-                        </tr>
+                            <tr>
+                                <th align="left"><strong>ID:</strong></th>
+                                <th align="left">{{$cargo->id}}</th>
+                            </tr>
+                            <tr>
+                                <th align="left"><strong>@lang('Cargo:')</strong>:</th>
+                                <th align="left">{{$cargo->nome_cargo}}</th>
+                            </tr>
+                            <tr>
+                                <th align="left"><strong>@lang('Descrição:')</strong>:</th>
+                                <th align="left">{{$cargo->desc_cargo}}</th>
+                            </tr>
+                            <tr>
+                                <th align="left"><strong>@lang('Adicionado')</strong>:</th>
+                                <th align="left">{{$cargo->created_at}}</th>
+                            </tr>
+                            <tr>
+                                <th align="left"><strong>@lang('Atualizado')</strong>:</th>
+                                <th align="left">{{$cargo->updated_at}}</th>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
